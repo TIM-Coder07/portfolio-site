@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { FaDribbble, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { SiBehance, SiGmail } from "react-icons/si";
+import logo from "@/assets/logo1.png";
+import Image from "next/image";
 
 const Footer = () => (
     <footer className="bg-[#0A0A0A] text-white border-t border-white/10 px-4 sm:px-6 lg:px-10 py-12 sm:py-14">
@@ -10,9 +12,18 @@ const Footer = () => (
 
                 {/* Left - Brand */}
                 <div className="text-center sm:text-left">
-                    <h2 className="text-xl sm:text-2xl font-bold tracking-tight">
-                        ACME<span className="text-orange-400">.</span>
-                    </h2>
+                    <Link
+                        href="#home"
+                        className="text-xl sm:text-2xl font-bold tracking-tight"
+                    >
+                        <Image
+                            src={logo}
+                            alt="Logo"
+                            width={120}
+                            height={120}
+                            className="rounded-md"
+                        />
+                    </Link>
 
                     <p className="text-white/50 text-sm mt-3 max-w-xs mx-auto sm:mx-0 leading-relaxed">
                         Designing modern, clean, and impactful digital experiences.

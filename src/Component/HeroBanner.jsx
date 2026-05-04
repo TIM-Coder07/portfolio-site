@@ -50,13 +50,14 @@ const HeroBanner = () => {
             >
               Contact Me
             </Link>
-
-            <Link
-              href="/cv.pdf"
+            <a
+              href="/Taj_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 rounded-full border border-gray-500 text-white hover:bg-white hover:text-black transition duration-300 w-full sm:w-auto text-center"
             >
               Download CV
-            </Link>
+            </a>
           </div>
 
           {/* Socials */}
