@@ -3,14 +3,18 @@
 const ProjectsPage = () => {
   const projects = [
     {
-      title: "Brand Identity System",
-      desc: "A complete branding project including logo, typography, and visual guidelines.",
-      tag: "Branding",
+      title: "Real Estate Website",
+      desc: "A responsive real estate platform that allows users to explore property listings with a clean and modern interface. It provides an easy browsing experience with smooth navigation and organized property displays.Built using HTML, CSS, and JavaScript, the project focuses on user- friendly design, responsiveness across all devices, and a simple UI for better property discovery.",
+      tag: "Real Estate",
+      liveLink:"https://tim-coder07.github.io/Real_State/index.html",
+      github:"https://github.com/TIM-Coder07/Real_State"
     },
     {
       title: "E-commerce UI/UX",
-      desc: "Designed a seamless shopping experience with clean layouts and strong conversions.",
+      desc: "A modern and scalable e-commerce web application designed with a strong focus on user experience and performance. It features a clean UI, smooth navigation, and optimized shopping flow to enhance customer engagement.Built using Next.js and Tailwind CSS, the project integrates secure authentication with better-auth and leverages popular npm packages for improved functionality, responsiveness, and seamless interactions.",
       tag: "UI/UX",
+      liveLink:"https://fast-basket.vercel.app/",
+      github:"https://github.com/abufahimkhan/fast-basket"
     },
     {
       title: "Portfolio Website",
@@ -66,14 +70,23 @@ const ProjectsPage = () => {
 
               {/* CTA */}
               <div className="flex items-center justify-between">
-                <button className="text-sm font-medium text-white/70 group-hover:text-white transition">
-                  View Project →
-                </button>
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer text-sm font-medium text-white/70 hover:text-white transition"
+                >
+                  Live →
+                </a>
 
-                {/* Arrow Icon */}
-                <span className="text-white/40 group-hover:text-white transition transform group-hover:translate-x-1">
-                  →
-                </span>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer text-sm text-gray-400 hover:text-white transition"
+                >
+                  Code →
+                </a>
               </div>
 
               {/* Glow effect */}
