@@ -13,12 +13,15 @@ const About = () => {
 
                 {/* Paragraph 1 */}
                 <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-300 mb-4 sm:mb-6">
-                    I'm a passionate software developer with a love for creating intuitive and impactful web applications. With experience in React, Next.js, and Tailwind CSS, I enjoy building projects that solve real-world problems and provide great user experiences.
+                    I’m a front-end web developer who loves building clean and user-friendly websites. I enjoy working with HTML5, CSS3, JavaScript, React.js, Next.js, and Node.js to turn ideas into real projects.
                 </p>
 
                 {/* Paragraph 2 */}
                 <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-400">
-                    When I'm not coding, you can find me exploring new technologies, contributing to open source, or sharing my knowledge through blogging and community events. I'm always eager to connect with fellow developers and collaborate on exciting projects!
+                    I focus on creating responsive (mobile-friendly), fast, and visually appealing websites with a strong emphasis on UI/UX design and performance optimization. I’m also exploring backend tools like Firebase to build complete full-stack web applications.
+                </p>
+                <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-400">
+                    I like learning new things, solving problems, and taking on new challenges. Always improving, one project at a time.
                 </p>
 
             </div>

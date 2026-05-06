@@ -17,14 +17,17 @@ const ProjectsPage = () => {
       github:"https://github.com/abufahimkhan/fast-basket"
     },
     {
-      title: "Portfolio Website",
-      desc: "A modern personal portfolio built with Next.js and Tailwind.",
-      tag: "Web Dev",
+      title: "Tiles Shop",
+      desc: "Tiles gallery project is a responsive web app showcasing tile designs with modern UI filtering options and smooth navigation for enhanced user experience interface display.",
+      liveLink:"https://assignment-08-tiles-gallery-two.vercel.app/",
+      github:"https://github.com/TIM-Coder07/assignment_08"
     },
     {
       title: "Mobile App Design",
       desc: "User-friendly mobile app interface focused on usability and simplicity.",
-      tag: "Mobile",
+      tag: "Travel",
+      liveLink:"https://assignment-08-tiles-gallery-two.vercel.app/",
+      github:"https://github.com/TIM-Coder07/Travel-guru"
     },
   ];
 

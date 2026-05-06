@@ -1,23 +1,21 @@
-'use client';
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaDribbble, FaFacebook, FaTwitter } from "react-icons/fa";
-import { SiBehance } from "react-icons/si";
+import { FaDribbble, FaFacebook, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
 import { TypeAnimation } from "react-type-animation";
+import heroImg from "@/assets/sajon2.png";
 
 const HeroBanner = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white px-4 sm:px-6 lg:px-10 py-16">
-
       {/* Background glow */}
       <div className="absolute inset-0 opacity-20 blur-3xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
 
       <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 items-center">
-
         {/* LEFT SIDE - TEXT (always first on mobile) */}
         <div className="text-center md:text-left">
-
           <h3 className="text-xs sm:text-sm uppercase tracking-widest text-gray-400 mb-3 sm:mb-4">
             Hi there, I’m
           </h3>
@@ -39,7 +37,9 @@ const HeroBanner = () => {
           />
 
           <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed mt-6 sm:mt-8 mb-8 sm:mb-10 max-w-xl mx-auto md:mx-0">
-            A passionate software developer crafting clean, intuitive digital experiences. I specialize in building modern web applications using React, Next.js, and Tailwind CSS.
+            A passionate software developer crafting clean, intuitive digital
+            experiences. I specialize in building modern web applications using
+            React, Next.js, and Tailwind CSS.
           </p>
 
           {/* Buttons */}
@@ -63,10 +63,14 @@ const HeroBanner = () => {
           {/* Socials */}
           <div className="flex justify-center md:justify-start gap-5 text-xl">
             {[
-              { icon: <FaFacebook />, link: "https://facebook.com" },
-              { icon: <FaTwitter />, link: "https://twitter.com" },
-              { icon: <FaDribbble />, link: "https://dribbble.com" },
-              { icon: <SiBehance />, link: "https://behance.net" },
+              {
+                icon: <FaFacebook />,
+                link: "https://www.facebook.com/profile.php?id=100076012159979",
+              },
+              { icon: <FaTwitter />, link: "https://x.com/TIMSajon1" },
+              { icon: <FaDribbble />, link: "https://dribbble.com/Sajon007" },
+              { icon: <SiGithub />, link: "https://github.com/TIM-Coder07" },
+              { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/taj-ibne-masud/" },
             ].map((item, i) => (
               <Link
                 key={i}
@@ -82,11 +86,9 @@ const HeroBanner = () => {
 
         {/* RIGHT SIDE - IMAGE (moves below text on mobile) */}
         <div className="relative flex justify-center order-last md:order-none mt-6 md:mt-0">
-
           <div className="relative w-[240px] sm:w-[280px] md:w-[350px] lg:w-[400px] transition-transform duration-500 hover:scale-[1.02]">
-
             <Image
-              src="/hero-image.png"
+              src={heroImg}
               alt="Hero"
               width={400}
               height={500}
@@ -96,9 +98,7 @@ const HeroBanner = () => {
             {/* glow */}
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 opacity-20 blur-2xl -z-10 rounded-2xl" />
           </div>
-
         </div>
-
       </div>
     </section>
   );
