@@ -23,10 +23,10 @@ const ProjectsPage = () => {
       github:"https://github.com/TIM-Coder07/assignment_08"
     },
     {
-      title: "Mobile App Design",
-      desc: "User-friendly mobile app interface focused on usability and simplicity.",
-      tag: "Travel",
-      liveLink:"https://assignment-08-tiles-gallery-two.vercel.app/",
+      title: "Portfolio Site",
+      desc: "A portfolio website is a personal online space where you showcase your skills, projects, experience, and achievements as a developer or professional. It helps clients, recruiters, or visitors quickly understand what you can do and what work you have done.",
+      tag: "Portfolio",
+      liveLink:"https://mern-portfolio-nine-alpha.vercel.app/",
       github:"https://github.com/TIM-Coder07/Travel-guru"
     },
   ];
@@ -82,14 +82,14 @@ const ProjectsPage = () => {
                   Live →
                 </a>
 
-                <a
+                {/* <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cursor-pointer text-sm text-gray-400 hover:text-white transition"
                 >
                   Code →
-                </a>
+                </a> */}
               </div>
 
               {/* Glow effect */}
