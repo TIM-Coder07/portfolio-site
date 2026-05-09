@@ -70,7 +70,7 @@ const HeroBanner = () => {
               { icon: <FaTwitter />, link: "https://x.com/TIMSajon1" },
               { icon: <FaDribbble />, link: "https://dribbble.com/Sajon007" },
               { icon: <SiGithub />, link: "https://github.com/TIM-Coder07" },
-              { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/taj-ibne-masud/" },
+              { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/taj-ibne-masud?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
             ].map((item, i) => (
               <Link
                 key={i}
@@ -85,7 +85,7 @@ const HeroBanner = () => {
         </div>
 
         {/* RIGHT SIDE - IMAGE (moves below text on mobile) */}
-        <div className="relative flex justify-center order-last md:order-none mt-6 md:mt-0">
+        <div className="relative flex justify-center order-last md:order-0 mt-6 md:mt-0">
           <div className="relative w-[240px] sm:w-[280px] md:w-[350px] lg:w-[400px] transition-transform duration-500 hover:scale-[1.02]">
             <Image
               src={heroImg}
