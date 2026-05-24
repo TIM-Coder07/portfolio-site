@@ -9,6 +9,7 @@ import logo from "@/assets/logo1.png";
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Technical Skil", href: "#technicalSkil" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
