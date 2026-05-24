@@ -51,7 +51,7 @@ const HeroBanner = () => {
               Contact Me
             </Link>
             <a
-              href="/Taj_CV.pdf"
+              href="https://drive.google.com/file/d/1W9fX6v5ij1dpnQ0xIPElvEZtmkvA4WHe/view"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-full border border-gray-500 text-white hover:bg-white hover:text-black transition duration-300 w-full sm:w-auto text-center"
